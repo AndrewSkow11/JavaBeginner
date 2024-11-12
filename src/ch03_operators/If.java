@@ -12,6 +12,10 @@ public class If {
 
         int num = 8;
 
+        if (
+                (num >5 ) && (num < 10) || (num < 12)
+        ) System.out.printf("Число %d в диапазоне от 6 до 9 включенительно" +
+                "или равно 12", num);
 
 
     }
