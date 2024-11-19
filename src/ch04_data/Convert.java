@@ -1,4 +1,4 @@
-package ch04;
+package ch04_data;
 
 public class Convert {
     public static void main(String[] args) {
