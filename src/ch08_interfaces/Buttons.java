@@ -7,17 +7,21 @@ public class Buttons extends JFrame {
 
     JPanel pn1 = new JPanel();
 
-    public static void main(String[] args) {
-        Buttons gui = new Buttons();
-    }
 
 
-    ImageIcon tick = new ImageIcon("tuck.png");
-    ImageIcon cross = new ImageIcon("cross.png");
+
+//    ClassLoader ldr = this.getClass().getClassLoader();
+//    java.net.URL ticketURL = ldr.getResource("tick.png");
+//    java.net.URL crossURL = ldr.getResource("cross.png");
+//
+//    ImageIcon tick = new ImageIcon(ticketURL);
+//    ImageIcon cross = new ImageIcon(crossURL);
 
     JButton btn = new JButton("Нажми меня");
-    JButton tickBtn = new JButton(tick);
-    JButton crossBtn = new JButton("Стоп", cross);
+    JButton tickBtn = new JButton("Картинка tick png");
+    JButton crossBtn = new JButton("Картинка cross.png");
+
+
 
 
     public Buttons() {
@@ -30,5 +34,11 @@ public class Buttons extends JFrame {
         pn1.add(tickBtn);
         pn1.add(crossBtn);
     }
+
+    public static void main(String[] args) {
+        Buttons gui = new Buttons();
+    }
+
+
 
 }
